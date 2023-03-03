@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { WeatherProvider } from "./context/WeatherContext";
+import Container from "./components/Container";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
-  return (
-    <div className="App">
- 
-    </div>
-  );
+  return <div className="App">
+    <WeatherProvider>
+    <Container/>
+    </WeatherProvider>
+  </div>;
 }
 
 export default App;
+
+//
